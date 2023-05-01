@@ -16,14 +16,20 @@ namespace OoopsConceptsDay1
             while (true)
             {
                 Console.WriteLine("\nChoose a option From Below \n" +
-                    "Enter 1: Object Class Concept\n"
-                    );
+                    "Enter 1: Object Class Concept\n"+
+                    "Enter 2: Inheritance Concept\n"+"");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
                         ClassObject classObject = new ClassObject();
                         classObject.CreatingClass();
+                        break;
+                    case 2:
+                        Finding concept = new Finding();
+                        concept.AchivingInheritance("Aftab","Bio");
+                        concept.AchInheritance("Patel");
+                        concept.Information("Pune");
                         break;
                     default:
                         Console.WriteLine("Choose a Valid Option");
