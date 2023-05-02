@@ -17,8 +17,10 @@ namespace OoopsConceptsDay1
             {
                 Console.WriteLine("\nChoose a option From Below \n" +
                     "Enter 1: Object Class Concept\n" +
-                    "Enter 2: Inheritance Concept\n" + 
-                    "Enter 3: Encapsulation Concept\n");
+                    "Enter 2: Inheritance Concept\n" +
+                    "Enter 3: Encapsulation Concept\n" +
+                    "ENter 4: Abstraction Concept\n" +
+                    "");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -37,7 +39,12 @@ namespace OoopsConceptsDay1
                         encapsulation.Name = "Aftab";
                         encapsulation.Address = "pune";
                         encapsulation.RollNumber = 23;
-                        Console.WriteLine("Name is: "+encapsulation.Name+ "Address is: "+encapsulation.Address+ "Roll Number is: "+encapsulation.RollNumber);
+                        Console.WriteLine("Name is: " + encapsulation.Name + "Address is: " + encapsulation.Address + "Roll Number is: " + encapsulation.RollNumber);
+                        break;
+                    case 4:
+                        Workers newemployees=new Workers();
+                        newemployees.DisplayData();
+                        newemployees.EmplloyeeData();
                         break;
                     default:
                         Console.WriteLine("Choose a Valid Option");
