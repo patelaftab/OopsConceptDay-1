@@ -47,6 +47,8 @@
     <Compile Include="ClassObject.cs" />
     <Compile Include="Encapsulation.cs" />
     <Compile Include="InheritanceConcept.cs" />
+    <Compile Include="MethodOverloading.cs" />
+    <Compile Include="MethodOverriding.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

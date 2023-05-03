@@ -19,8 +19,9 @@ namespace OoopsConceptsDay1
                     "Enter 1: Object Class Concept\n" +
                     "Enter 2: Inheritance Concept\n" +
                     "Enter 3: Encapsulation Concept\n" +
-                    "ENter 4: Abstraction Concept\n" +
-                    "");
+                    "Enter 4: Abstraction Concept\n" +
+                    "Enter 5: Method Overloading\n" +
+                    "Enter 6: Method Overriding\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -42,9 +43,20 @@ namespace OoopsConceptsDay1
                         Console.WriteLine("Name is: " + encapsulation.Name + "Address is: " + encapsulation.Address + "Roll Number is: " + encapsulation.RollNumber);
                         break;
                     case 4:
-                        Workers newemployees=new Workers();
+                        Workers newemployees = new Workers();
                         newemployees.DisplayData();
                         newemployees.EmplloyeeData();
+                        break;
+                    case 5:
+                        MethodOverloading methodOverloading = new MethodOverloading();
+                        methodOverloading.Add(10, 20);
+                        methodOverloading.Add("Aftab", "Patel");
+                        break;
+                    case 6:
+                        Details methodOverriding = new Details();
+                        methodOverriding.Employye();
+                        methodOverriding=new MethodOverriding();
+                        methodOverriding.Employye();
                         break;
                     default:
                         Console.WriteLine("Choose a Valid Option");
